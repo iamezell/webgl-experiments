@@ -1,0 +1,1 @@
+define("game",[],function(){return Game=function(){this.setup=function(){console.log("I am being set up!")}},Game}),define("main",["game"],function(e){var t=new e,n=function(){t.setup()};n()});

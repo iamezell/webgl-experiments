@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Myninja Side Scroller</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<script id="shader-vs" type="x-shader/x-vertex">
+		attribute vec3 aVertexPosition;
+		void main(void) {
+			gl_Position = vec4(aVertexPosition, 1.0);
+		}	
+	</script>
+	<script id="shader-fs" type="x-shader/x-fragment">
+		void main(void) {
+			gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+		}
+	</script>
+</head>
+<body>
+<div id="container">
+<canvas id="game" width='320' height='480'>
+</canvas>
+</div>
+<script data-main="javascripts/main.js" src="javascripts/require.js"></script>
+
+
+</body>
+</html>

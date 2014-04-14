@@ -1,0 +1,1 @@
+define("helloworld",[],function(){console.log("hello")});
