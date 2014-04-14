@@ -1,4 +1,4 @@
-define(['game'], function(game) {
+define(['game','jQuery'], function(game) {
 
 	var myGame  = new game();
 	var initialize = function ()
